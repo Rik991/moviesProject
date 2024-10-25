@@ -1,0 +1,129 @@
+{
+  "users": [
+    {
+      "email": "rik@live.it",
+      "password": "$2a$10$yNeToAnIqn7S7i72Tuj6cu9A5ydZIZUqF0PhjvspKMr7ldivwASpu",
+      "name": "riccardo",
+      "id": 1
+    },
+    {
+      "email": "ric@live.it",
+      "password": "$2a$10$2IubYyswNtWK2BoG.tM.gekxMgcyWUJz5iA/ePXshbqR9B5KiE6Mq",
+      "id": 2
+    },
+    {
+      "email": "mia@mail.it",
+      "password": "$2a$10$C5cLsUQhY0AU8MHSue1u1.obyiu3FHXfiLGqo/Uqhp4EVbAD2oAIW",
+      "id": 3
+    },
+    {
+      "email": "mail@mail.i",
+      "password": "$2a$10$PBRhTlwTQhKmmleirEJUVevrE2ZDvtZzFRC5nAyzBpag5GornBjey",
+      "name": "mionome1",
+      "id": 4
+    }
+  ],
+  "movies-popular": [
+    {
+      "id": 1,
+      "title": "Django",
+      "poster": "https://m.media-amazon.com/images/I/811V32gosPL._UX250_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "poster": "https://m.media-amazon.com/images/I/510L5ypQBdL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "poster": "https://img.posterstore.com/zoom/wb0037-8batman-thedarkknightrises50x70.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Pulp Fiction",
+      "poster": "https://m.media-amazon.com/images/I/718LfFW+tIL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": 5,
+      "title": "The Departed",
+      "poster": "https://i.ebayimg.com/images/g/AVsAAOSwOdpX1x3y/s-l1200.jpg"
+    },
+    {
+      "id": 6,
+      "title": "The Lord of the Rings: The Return of the King",
+      "poster": "https://images.wall-art.de/format:webp/q:92/rs:fit:780:/_img/out/pictures/master/product/1/104633.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Prova a prendermi",
+      "poster": "https://www.picclickimg.com/unUAAOSw9X9imFvL/Prova-A-Prendermi-Film-2002-Poster-Locandina-45X32Cm.webp"
+    },
+    {
+      "id": 8,
+      "title": "Inception",
+      "poster": "https://i.ebayimg.com/images/g/JfYAAOSwIOtbatHS/s-l1200.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Fight Club",
+      "poster": "https://i.etsystatic.com/18242346/r/il/c9908e/2412674268/il_570xN.2412674268_1sgm.jpg"
+    },
+    {
+      "id": 10,
+      "title": "The Matrix",
+      "poster": "https://c8.alamy.com/compit/2jh2n9a/pantoliano-fishburne-reeves-poster-la-matrice-1999-2jh2n9a.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Saint Seya: Soul of Gold",
+      "poster": "https://mr.comingsoon.it/imgdb/locandine/235x336/64011.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Inglourious Basterds",
+      "poster": "https://pad.mymovies.it/filmclub/2008/10/105/locandina.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Bohemian Rhapsody",
+      "poster": "https://m.media-amazon.com/images/I/81Lt5CLlUOL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Le Iene",
+      "poster": "https://m.media-amazon.com/images/I/41AjRzhV4vL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Saving private Ryan",
+      "poster": "https://pad.mymovies.it/filmclub/2006/01/051/locandinapg1.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Iron Man 3",
+      "poster": "https://pad.mymovies.it/filmclub/2012/06/004/locandina.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Gladiator",
+      "poster": "https://i.ebayimg.com/images/g/NqgAAOSwqxZbbB9i/s-l1200.jpg"
+    },
+    {
+      "id": 18,
+      "title": "The Green Mile",
+      "poster": "https://media.posterlounge.com/img/products/710000/707683/707683_poster.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Braveheart",
+      "poster": "https://i.etsystatic.com/18242346/r/il/fe72a9/2412683470/il_570xN.2412683470_oouu.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Jurassic Park",
+      "poster": "https://i.ebayimg.com/00/s/MTYwMFgxMDk3/z/fl4AAOSwakxdOOVA/$_57.JPG?set_id=8800005007"
+    }
+  ],
+  "favorites": []
+}

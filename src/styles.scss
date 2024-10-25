@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "bootstrap/scss/bootstrap";
+body {
+  background-image: url("https://wallpapers.com/images/hd/cinema-theater-screen-red-interior-mdii641t9soyox58.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: lightgray;
+}

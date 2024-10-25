@@ -1,0 +1,57 @@
+<div class="container text-center py-5 align-items-center">
+  <form
+    [formGroup]="form"
+    class="d-flex flex-column gap-4 align-items-center mt-5"
+    (ngSubmit)="login()"
+  >
+    <h1 class="text-dark">Login</h1>
+
+    <!-- Email -->
+    <div class="form-group col-6 position-relative">
+      <input
+        type="email"
+        [placeholder]="
+          form.get('email')?.touched && form.get('email')?.invalid
+            ? ''
+            : 'Inserisci la tua email'
+        "
+        formControlName="email"
+        class="form-control bg-transparent border-black w-100"
+      />
+      <div
+        *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
+        class="error-placeholder text-danger"
+      >
+        Inserisci un'email valida.
+      </div>
+    </div>
+
+    <!-- Password -->
+    <div class="form-group col-6 position-relative">
+      <input
+        type="password"
+        [placeholder]="
+          form.get('password')?.touched && form.get('password')?.invalid
+            ? ''
+            : 'Inserisci la tua password'
+        "
+        formControlName="password"
+        class="form-control bg-transparent border-black w-100"
+      />
+      <div
+        *ngIf="form.get('password')?.invalid && form.get('password')?.touched"
+        class="error-placeholder text-danger"
+      >
+        La password è richiesta.
+      </div>
+    </div>
+
+    <button
+      type="submit"
+      class="btn btn-success border"
+      [disabled]="form.invalid"
+    >
+      Accedi
+    </button>
+  </form>
+</div>
