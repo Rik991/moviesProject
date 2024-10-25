@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss'], // Correzione: styleUrl è un errore di battitura
+  styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent {
   form!: FormGroup;

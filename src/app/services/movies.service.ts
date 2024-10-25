@@ -16,10 +16,4 @@ export class MoviesService {
   getAllMovies(): Observable<iMovie[]> {
     return this.http.get<iMovie[]>(this.moviesUrl);
   }
-
-  getFavorites(userId: number): Observable<iFavorite[]> {
-    return this.http.get<iFavorite[]>(
-      `${environment.favoritesUrl}?userId=${userId}`
-    );
-  }
 }

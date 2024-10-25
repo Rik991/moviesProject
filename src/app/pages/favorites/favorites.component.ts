@@ -16,8 +16,7 @@ export class FavoritesComponent implements OnInit {
 
   constructor(
     private authService: AuthService,
-    private moviesService: MoviesService,
-    private favoriteService: FavoriteService // Aggiungi il FavoriteService
+    private favoriteService: FavoriteService
   ) {}
 
   ngOnInit() {
@@ -31,7 +30,7 @@ export class FavoritesComponent implements OnInit {
 
   loadFavorites() {
     if (this.userId) {
-      this.moviesService.getFavorites(this.userId).subscribe((favorites) => {
+      this.favoriteService.getFavorites(this.userId).subscribe((favorites) => {
         this.favorites = favorites;
       });
     }
@@ -41,10 +40,9 @@ export class FavoritesComponent implements OnInit {
     if (
       confirm(`Vuoi davvero rimuovere ${favorite.movie.title} dai preferiti?`)
     ) {
-      this.favoriteService.removeFromFavorites(favorite).subscribe(() => {
-        console.log(`${favorite.movie.title} rimosso dai preferiti`);
-        this.loadFavorites();
-      });
+      this.favoriteService
+        .removeFromFavorites(favorite)
+        .subscribe(() => this.loadFavorites());
     }
   }
 }

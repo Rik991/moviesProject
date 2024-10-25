@@ -52,35 +52,21 @@ export class HomeComponent {
 
   addToFavorites(movie: iMovie) {
     if (this.userId) {
-      const favorite: iFavorite = {
-        userId: this.userId,
-        movie: movie,
-      };
-
-      const isFavorite = this.favorites.some(
-        (fav) => fav.movie.id === movie.id
-      );
-
+      const isFavorite = this.isFavorite(movie);
       if (isFavorite) {
-        // Rimuovi dai preferiti
         const favoriteToRemove = this.favorites.find(
           (fav) => fav.movie.id === movie.id && fav.userId === this.userId
         );
-
         if (favoriteToRemove) {
           this.favoriteSvc
             .removeFromFavorites(favoriteToRemove)
-            .subscribe(() => {
-              console.log(`${movie.title} rimosso dai preferiti`);
-              this.loadFavorites(); // Ricarica i preferiti
-            });
+            .subscribe(() => this.loadFavorites());
         }
       } else {
-        // Aggiungi ai preferiti
-        this.favoriteSvc.addToFavorites(favorite).subscribe(() => {
-          console.log(`${movie.title} aggiunto ai preferiti`);
-          this.loadFavorites(); // Ricarica i preferiti
-        });
+        const favorite: iFavorite = { userId: this.userId, movie };
+        this.favoriteSvc
+          .addToFavorites(favorite)
+          .subscribe(() => this.loadFavorites());
       }
     }
   }

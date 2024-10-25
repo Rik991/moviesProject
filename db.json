@@ -11,6 +11,12 @@
       "password": "$2a$10$kNvHSrKH1WMbDVTRKEr1fOo7KvI4MCd9F2ILyFCd2/d2UUCFUlD9W",
       "name": "due",
       "id": 2
+    },
+    {
+      "email": "tre@tre.tre",
+      "password": "$2a$10$zwfN1M65qL4ZB7sST0gZ7OiCAifiulRwfucNJXZqOSbtmIfB5fHeS",
+      "name": "tre",
+      "id": 3
     }
   ],
   "movies-popular": [
@@ -135,13 +141,49 @@
       "id": 7
     },
     {
+      "userId": 3,
+      "movie": {
+        "id": 7,
+        "title": "Prova a prendermi",
+        "poster": "https://www.picclickimg.com/unUAAOSw9X9imFvL/Prova-A-Prendermi-Film-2002-Poster-Locandina-45X32Cm.webp"
+      },
+      "id": 9
+    },
+    {
+      "userId": 3,
+      "movie": {
+        "id": 12,
+        "title": "Inglourious Basterds",
+        "poster": "https://pad.mymovies.it/filmclub/2008/10/105/locandina.jpg"
+      },
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "movie": {
+        "id": 7,
+        "title": "Prova a prendermi",
+        "poster": "https://www.picclickimg.com/unUAAOSw9X9imFvL/Prova-A-Prendermi-Film-2002-Poster-Locandina-45X32Cm.webp"
+      },
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "movie": {
+        "id": 11,
+        "title": "Saint Seya: Soul of Gold",
+        "poster": "https://mr.comingsoon.it/imgdb/locandine/235x336/64011.jpg"
+      },
+      "id": 12
+    },
+    {
       "userId": 2,
       "movie": {
-        "id": 4,
-        "title": "Pulp Fiction",
-        "poster": "https://m.media-amazon.com/images/I/718LfFW+tIL._AC_UF894,1000_QL80_.jpg"
+        "id": 12,
+        "title": "Inglourious Basterds",
+        "poster": "https://pad.mymovies.it/filmclub/2008/10/105/locandina.jpg"
       },
-      "id": 8
+      "id": 13
     }
   ]
 }

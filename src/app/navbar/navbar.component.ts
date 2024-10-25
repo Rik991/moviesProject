@@ -22,7 +22,9 @@ export class NavbarComponent {
   }
 
   logout(): void {
-    this.authSvc.logout();
-    alert('logout effettuato correttamente');
+    if (confirm(`Vuoi davvero effettuare il logOut?`)) {
+      this.authSvc.logout();
+      alert('logout effettuato correttamente');
+    }
   }
 }
