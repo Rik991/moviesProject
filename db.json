@@ -1,26 +1,16 @@
 {
   "users": [
     {
-      "email": "rik@live.it",
-      "password": "$2a$10$yNeToAnIqn7S7i72Tuj6cu9A5ydZIZUqF0PhjvspKMr7ldivwASpu",
-      "name": "riccardo",
+      "email": "uno@uno.uno",
+      "password": "$2a$10$klI3vIbxTcq.7ysg6JU1POXt40mqXKxhFZ1UNu1xqecy/bNaK530G",
+      "name": "uno",
       "id": 1
     },
     {
-      "email": "ric@live.it",
-      "password": "$2a$10$2IubYyswNtWK2BoG.tM.gekxMgcyWUJz5iA/ePXshbqR9B5KiE6Mq",
+      "email": "due@due.due",
+      "password": "$2a$10$kNvHSrKH1WMbDVTRKEr1fOo7KvI4MCd9F2ILyFCd2/d2UUCFUlD9W",
+      "name": "due",
       "id": 2
-    },
-    {
-      "email": "mia@mail.it",
-      "password": "$2a$10$C5cLsUQhY0AU8MHSue1u1.obyiu3FHXfiLGqo/Uqhp4EVbAD2oAIW",
-      "id": 3
-    },
-    {
-      "email": "mail@mail.i",
-      "password": "$2a$10$PBRhTlwTQhKmmleirEJUVevrE2ZDvtZzFRC5nAyzBpag5GornBjey",
-      "name": "mionome1",
-      "id": 4
     }
   ],
   "movies-popular": [
@@ -125,5 +115,33 @@
       "poster": "https://i.ebayimg.com/00/s/MTYwMFgxMDk3/z/fl4AAOSwakxdOOVA/$_57.JPG?set_id=8800005007"
     }
   ],
-  "favorites": []
+  "favorites": [
+    {
+      "userId": 1,
+      "movie": {
+        "id": 4,
+        "title": "Pulp Fiction",
+        "poster": "https://m.media-amazon.com/images/I/718LfFW+tIL._AC_UF894,1000_QL80_.jpg"
+      },
+      "id": 6
+    },
+    {
+      "userId": 2,
+      "movie": {
+        "id": 1,
+        "title": "Django",
+        "poster": "https://m.media-amazon.com/images/I/811V32gosPL._UX250_.jpg"
+      },
+      "id": 7
+    },
+    {
+      "userId": 2,
+      "movie": {
+        "id": 4,
+        "title": "Pulp Fiction",
+        "poster": "https://m.media-amazon.com/images/I/718LfFW+tIL._AC_UF894,1000_QL80_.jpg"
+      },
+      "id": 8
+    }
+  ]
 }

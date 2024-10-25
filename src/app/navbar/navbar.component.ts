@@ -8,12 +8,16 @@ import { AuthService } from '../auth/auth.service';
 })
 export class NavbarComponent {
   isLoggedIn: boolean = false;
-
+  userId: number | null = null;
   constructor(private authSvc: AuthService) {}
 
   ngOnInit() {
     this.authSvc.isLoggedIn$.subscribe((isLoggedIn) => {
       this.isLoggedIn = isLoggedIn;
+    });
+
+    this.authSvc.user$.subscribe((user) => {
+      this.userId = user ? user.id : null; // Recupera l'ID dell'utente
     });
   }
 

@@ -22,13 +22,14 @@
           >Home</a
         >
       </li>
-      <li class="nav-item">
+      <li class="nav-item" *ngIf="userId">
         <a
-          routerLink="home/favorites"
+          [routerLink]="['home/favorites', userId]"
           routerLinkActive="active"
           class="nav-link text-light"
-          >Preferiti</a
         >
+          Preferiti
+        </a>
       </li>
     </ul>
 
